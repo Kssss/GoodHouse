@@ -14,7 +14,7 @@ class _TabInfoState extends State<TabInfo> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: SearchBar(
+        title: MySearchBar(
           shwoLocation: true,
           onSearch: () {
             Navigator.of(context).pushNamed('search');

@@ -19,7 +19,7 @@ class _IndexSearchState extends State<IndexSearch> {
     return Scaffold(
       endDrawer: FilterDrawer(),
       appBar: AppBar(
-        title: SearchBar(
+        title: MySearchBar(
           shwoLocation: true,
           onSearch: () {
             Navigator.of(context).pushNamed('search');

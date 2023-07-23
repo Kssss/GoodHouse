@@ -2,7 +2,7 @@ import 'dart:ffi';
 
 import 'package:flutter/material.dart';
 
-class SearchBar extends StatefulWidget {
+class MySearchBar extends StatefulWidget {
   final bool? shwoLocation;
   final Function? goBackCallback;
   final String? inputValue;
@@ -12,7 +12,7 @@ class SearchBar extends StatefulWidget {
   final Function? onSearch;
   final ValueChanged<String>? onSearchSubmit;
 
-  const SearchBar(
+  const MySearchBar(
       {Key? key,
       this.shwoLocation,
       this.goBackCallback,
@@ -25,10 +25,10 @@ class SearchBar extends StatefulWidget {
       : super(key: key);
 
   @override
-  _SearchBarState createState() => _SearchBarState();
+  _MySearchBarState createState() => _MySearchBarState();
 }
 
-class _SearchBarState extends State<SearchBar> {
+class _MySearchBarState extends State<MySearchBar> {
   String _searchWord = ' ';
   late TextEditingController _controller;
   Function? _onClean() {

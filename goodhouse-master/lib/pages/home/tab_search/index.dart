@@ -4,7 +4,7 @@ import 'package:goodhouse/pages/home/tab_search/filter_bar/filter_drawer.dart';
 import 'package:goodhouse/widget/room_list_item_widget.dart';
 import 'package:goodhouse/widget/search_bar/index.dart';
 
-import 'filter_bar/index.dart';
+// import 'filter_bar/index.dart';
 
 class IndexSearch extends StatefulWidget {
   const IndexSearch({Key? key}) : super(key: key);
@@ -19,7 +19,7 @@ class _IndexSearchState extends State<IndexSearch> {
     return Scaffold(
       endDrawer: FilterDrawer(),
       appBar: AppBar(
-        title: SearchBar(
+        title: MySearchBar(
           shwoLocation: true,
           onSearch: () {
             Navigator.of(context).pushNamed('search');
@@ -31,9 +31,9 @@ class _IndexSearchState extends State<IndexSearch> {
         children: [
           Container(
             height: 41.0,
-            child: FilterBar(
-              onChange: (data) {},
-            ),
+            // child: FilterBar(
+            //   onChange: (data) {},
+            // ),
           ),
           Expanded(
             child: ListView(

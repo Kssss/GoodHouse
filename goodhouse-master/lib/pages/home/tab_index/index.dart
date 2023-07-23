@@ -5,7 +5,7 @@ import 'package:goodhouse/pages/home/tab_index/index_navigator_item.dart';
 import 'package:goodhouse/widget/common_swiper.dart';
 import 'package:goodhouse/widget/search_bar/index.dart';
 
-import 'index_recommend.dart';
+// import 'index_recommend.dart';
 
 class TabIndex extends StatelessWidget {
   const TabIndex({Key? key}) : super(key: key);
@@ -14,7 +14,7 @@ class TabIndex extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: SearchBar(
+        title: MySearchBar(
           shwoLocation: true,
           onSearch: () {
             Navigator.of(context).pushNamed('search');
@@ -27,7 +27,7 @@ class TabIndex extends StatelessWidget {
         children: [
           CommonSwiper(),
           IndexNavigator(),
-          IndexRecomment(),
+          // IndexRecomment(),
           Info(),
           // IndexNavigatorItem(title, imageUrl, onTap)
           // Text("这里是内容区"),
